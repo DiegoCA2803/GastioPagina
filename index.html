@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastio - Seguridad y Prevención Inteligente</title>
+    <meta name="description"
+        content="Gastio es un sistema de detección de fugas de gas y alertas preventivas para hogares y pequeños negocios.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <a href="#inicio" class="logo">Gastio</a>
+            <button class="boton-menu" id="botonMenu" aria-label="Abrir menú">
+                <span class="linea-menu"></span>
+                <span class="linea-menu"></span>
+                <span class="linea-menu"></span>
+            </button>
+            <nav class="navegacion-principal" id="menuNavegacion">
+                <ul class="lista-menu">
+                    <li><a href="#inicio" class="enlace-menu">Inicio</a></li>
+                    <li><a href="#quienes-somos" class="enlace-menu">Quiénes Somos</a></li>
+                    <li><a href="#sobre-proyecto" class="enlace-menu">El Proyecto</a></li>
+                    <li><a href="#funciones" class="enlace-menu">Funciones</a></li>
+                    <li><a href="#contacto" class="enlace-menu boton-contacto-menu">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Inicio -->
+        <section id="inicio" class="seccion-inicio">
+            <div class="contenedor hero">
+                <div class="contenido-hero">
+                    <h1 class="titulo-principal">Detección<br><span>Mecánica.</span></h1>
+                    <p class="eslogan">Ingeniería de próxima generación para la prevención de fugas de gas.</p>
+                    <a href="#contacto" class="boton-primario">Explorar Sistema</a>
+                </div>
+                <div class="imagen-hero">
+                    <svg viewBox="0 0 24 24" class="icono-sensor" aria-hidden="true">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Quiénes somos -->
+        <section id="quienes-somos" class="animar-scroll">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">01. Quiénes Somos</h2>
+                <div class="grid-dos-columnas">
+                    <div>
+                        <p class="texto-enorme">Somos una empresa dedicada a la tecnología y la seguridad electrónica.</p>
+                    </div>
+                    <div>
+                        <p class="texto-secundario">Nos especializamos en la integración de hardware y desarrollo de software para crear soluciones innovadoras. Nuestro compromiso es desarrollar herramientas eficientes que protejan a las personas y sus bienes, combinando avances tecnológicos con un enfoque práctico para que la seguridad preventiva sea confiable, accesible y fácil de implementar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sobre el proyecto -->
+        <section id="sobre-proyecto" class="animar-scroll">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">02. El Proyecto</h2>
+                <div class="grid-dos-columnas">
+                    <div>
+                        <p class="texto-enorme">Gastio representa la evolución en los sistemas de seguridad preventiva estructural.</p>
+                    </div>
+                    <div>
+                        <p class="texto-secundario">En el núcleo de Gastio se encuentra un microcontrolador ESP32 de alto rendimiento, integrado con sensores de gas de grado industrial. Al detectar la más mínima anomalía, el sistema desencadena un protocolo de seguridad integral: activa alertas inmediatas, inicia sistemas de ventilación automatizada y ejecuta el cierre de válvulas mediante servomotores de precisión, neutralizando el riesgo desde el primer instante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Funciones principales -->
+        <section id="funciones" class="animar-scroll">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">03. Capacidades</h2>
+                
+                <div class="cuadricula-tarjetas">
+                    <div class="tarjeta-funcion">
+                        <div class="icono-funcion">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                        </div>
+                        <h3>Detección de Gas</h3>
+                        <p>Monitoreo continuo mediante sensores de alta sensibilidad industrial.</p>
+                    </div>
+                    
+                    <div class="tarjeta-funcion">
+                        <div class="icono-funcion">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg>
+                        </div>
+                        <h3>Alertas</h3>
+                        <p>Notificaciones y alarmas visuales/sonoras instantáneas.</p>
+                    </div>
+
+                    <div class="tarjeta-funcion">
+                        <div class="icono-funcion">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 12V2M12 12v10M12 12l8.66-5M12 12l-8.66 5M12 12l-8.66-5M12 12l8.66 5"/></svg>
+                        </div>
+                        <h3>Ventilación</h3>
+                        <p>Activación automática de extractores ambientales.</p>
+                    </div>
+
+                    <div class="tarjeta-funcion">
+                        <div class="icono-funcion">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Válvula Servo</h3>
+                        <p>Bloqueo de seguridad mecanizado con servomotor de precisión.</p>
+                    </div>
+
+                    <div class="tarjeta-funcion">
+                        <div class="icono-funcion">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                        </div>
+                        <h3>App Remota</h3>
+                        <p>Visualización del estado del sistema directamente en tu dispositivo móvil.</p>
+                    </div>
+
+                    <div class="tarjeta-funcion">
+                        <div class="icono-funcion">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                        </div>
+                        <h3>Telemetría</h3>
+                        <p>Historial detallado y registro de eventos para control de calidad y seguridad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Beneficios -->
+        <section id="beneficios" class="animar-scroll">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">04. Ventajas</h2>
+                <ul class="lista-beneficios">
+                    <li class="beneficio-item">
+                        <div class="beneficio-numero">01</div>
+                        <div class="beneficio-contenido">
+                            <strong>Mayor seguridad</strong>
+                            <span>Protección íntegra del entorno ante accidentes estructurales.</span>
+                        </div>
+                    </li>
+                    <li class="beneficio-item">
+                        <div class="beneficio-numero">02</div>
+                        <div class="beneficio-contenido">
+                            <strong>Respuesta rápida</strong>
+                            <span>El sistema de hardware actúa en fracciones de segundo al detectar una anomalía.</span>
+                        </div>
+                    </li>
+                    <li class="beneficio-item">
+                        <div class="beneficio-numero">03</div>
+                        <div class="beneficio-contenido">
+                            <strong>Prevención Activa</strong>
+                            <span>Evita situaciones críticas cerrando válvulas antes de que la fuga sea peligrosa.</span>
+                        </div>
+                    </li>
+                    <li class="beneficio-item">
+                        <div class="beneficio-numero">04</div>
+                        <div class="beneficio-contenido">
+                            <strong>Autonomía</strong>
+                            <span>Un diseño mecanizado que opera sin requerir configuraciones manuales constantes.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 6. Contacto -->
+        <section id="contacto" class="animar-scroll">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">05. Contacto</h2>
+                <div class="cuadricula-contacto">
+                    <div class="info-contacto">
+                        <h3>Despliegue e Integración</h3>
+                        <p class="texto-secundario">Contáctanos para recibir especificaciones técnicas detalladas o coordinar una instalación y prueba de campo.</p>
+                        
+                        <div class="dato-box">
+                            <strong>Directo:</strong>
+                            <span>diegoal2803@gmail.com</span>
+                        </div>
+                        <div class="dato-box">
+                            <strong>Terminal / Teléfono:</strong>
+                            <span>+51 957 622 689</span>
+                        </div>
+                    </div>
+                    <div class="mapa-contenedor">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2362.621091752955!2d-80.60890280737729!3d-5.1934369746399724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1778882729129!5m2!1ses!2spe"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="grid-dos-columnas">
+                <div>
+                    <h2 class="logo text-white" style="color: white;">Gastio</h2>
+                    <p style="margin-top: 1rem; color: #aaa;">Hardware de Prevención y Seguridad Inteligente.</p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="color: #aaa;">&copy; 2026 Gastio.</p>
+                    <p style="color: #666; margin-top: 0.5rem;">Sistemas embebidos y seguridad.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
