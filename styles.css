@@ -336,6 +336,11 @@ section:nth-child(even) {
     background-color: var(--color-primario);
 }
 
+.tarjeta-funcion:hover h3,
+.tarjeta-funcion:hover p {
+    color: #111111 !important;
+}
+
 .icono-funcion {
     width: 56px;
     height: 56px;
@@ -387,6 +392,11 @@ section:nth-child(even) {
 .beneficio-item:hover {
     background-color: var(--color-primario);
     padding-left: 2rem;
+}
+
+.beneficio-item:hover .beneficio-contenido strong,
+.beneficio-item:hover .beneficio-contenido span {
+    color: #111111 !important;
 }
 
 .beneficio-numero {
