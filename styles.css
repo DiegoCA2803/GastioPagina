@@ -213,7 +213,7 @@ section:nth-child(even) {
 }
 
 .titulo-principal {
-    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-size: clamp(2.5rem, 10vw, 6.5rem);
     letter-spacing: -0.04em;
     margin-bottom: 2rem;
 }
@@ -538,5 +538,35 @@ section:nth-child(even) {
         min-height: unset;
         border-top: var(--borde);
         overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 0 4vw;
+    }
+    
+    .hero {
+        padding: 1.5rem;
+    }
+    
+    .eslogan {
+        font-size: 1.2rem;
+    }
+
+    .tarjeta-funcion {
+        padding: 2rem 1.5rem;
+    }
+    
+    .info-contacto {
+        padding: 2rem 1.5rem;
+    }
+
+    .cuadricula-contacto {
+        box-shadow: 4px 4px 0px var(--color-negro);
+    }
+
+    .beneficio-numero {
+        font-size: 2.5rem;
     }
 }
