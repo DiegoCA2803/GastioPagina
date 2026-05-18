@@ -4,6 +4,8 @@
     --color-negro: #111111;
     --color-blanco: #ffffff;
     --color-grid: rgba(17,17,17,0.1);
+    --color-texto-secundario: #333333;
+    --color-texto-muted: #555555;
     
     --borde: 2px solid var(--color-negro);
     --transicion: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
@@ -14,6 +16,8 @@
     --color-negro: #f4f4f0;
     --color-blanco: #1a1a1a;
     --color-grid: rgba(244,244,240,0.1);
+    --color-texto-secundario: #b0b0b0;
+    --color-texto-muted: #888888;
 }
 
 * {
@@ -295,7 +299,7 @@ section:nth-child(even) {
     font-size: 1.2rem;
     line-height: 1.6;
     font-weight: 500;
-    color: #333;
+    color: var(--color-texto-secundario);
 }
 
 /* Funciones "Cuadradas" perfectas */
@@ -351,7 +355,7 @@ section:nth-child(even) {
 .tarjeta-funcion p {
     font-size: 1rem;
     font-weight: 500;
-    color: #222;
+    color: var(--color-texto-secundario);
 }
 
 /* Beneficios Listas Horizontales */
@@ -434,7 +438,7 @@ section:nth-child(even) {
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     letter-spacing: 0.05em;
-    color: #555;
+    color: var(--color-texto-muted);
 }
 
 .dato-box span {
@@ -467,10 +471,10 @@ section:nth-child(even) {
 
 /* Footer */
 .pie-pagina {
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
+    background-color: #111111 !important;
+    color: #ffffff !important;
     padding: 6rem 0 4rem;
-    border-bottom: none;
+    border-top: var(--borde);
 }
 
 /* Animaciones */
