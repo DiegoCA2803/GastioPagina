@@ -527,4 +527,9 @@ section:nth-child(even) {
         transform: none;
         box-shadow: none;
     }
+
+    .mapa-contenedor {
+        min-height: 300px;
+        border-top: var(--borde);
+    }
 }
