@@ -1,12 +1,19 @@
-/* Variables CSS y Configuración Global */
 :root {
     --color-primario: #10b981;
-    --color-fondo: #f4f4f0; /* Off-white papel técnico */
+    --color-fondo: #f4f4f0;
     --color-negro: #111111;
     --color-blanco: #ffffff;
+    --color-grid: rgba(17,17,17,0.1);
     
     --borde: 2px solid var(--color-negro);
     --transicion: 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[data-theme="dark"] {
+    --color-fondo: #111111;
+    --color-negro: #f4f4f0;
+    --color-blanco: #1a1a1a;
+    --color-grid: rgba(244,244,240,0.1);
 }
 
 * {
@@ -128,6 +135,26 @@ h1, h2, h3, h4 {
     z-index: 1001;
 }
 
+.boton-tema {
+    background: none;
+    border: var(--borde);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-negro);
+    transition: var(--transicion);
+    background-color: var(--color-blanco);
+}
+
+.boton-tema:hover {
+    background-color: var(--color-primario);
+    color: var(--color-negro);
+    transform: rotate(15deg);
+}
+
 .linea-menu {
     display: block;
     width: 30px;
@@ -194,8 +221,8 @@ section:nth-child(even) {
     align-items: center;
     background-color: var(--color-fondo);
     background-image: 
-        linear-gradient(rgba(17,17,17,0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(17,17,17,0.1) 1px, transparent 1px);
+        linear-gradient(var(--color-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
     background-size: 50px 50px;
     background-position: center center;
     padding-top: 100px;
@@ -431,6 +458,11 @@ section:nth-child(even) {
     display: block;
     border: none;
     filter: grayscale(100%) contrast(120%);
+    transition: var(--transicion);
+}
+
+[data-theme="dark"] .mapa-contenedor iframe {
+    filter: grayscale(100%) contrast(120%) invert(100%);
 }
 
 /* Footer */

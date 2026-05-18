@@ -19,11 +19,16 @@
     <header class="encabezado">
         <div class="contenedor-navegacion">
             <a href="#inicio" class="logo">Gastio</a>
-            <button class="boton-menu" id="botonMenu" aria-label="Abrir menú">
-                <span class="linea-menu"></span>
-                <span class="linea-menu"></span>
-                <span class="linea-menu"></span>
-            </button>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="boton-tema" id="botonTema" aria-label="Cambiar tema">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="boton-menu" id="botonMenu" aria-label="Abrir menú">
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                </button>
+            </div>
             <nav class="navegacion-principal" id="menuNavegacion">
                 <ul class="lista-menu">
                     <li><a href="#inicio" class="enlace-menu">Inicio</a></li>
