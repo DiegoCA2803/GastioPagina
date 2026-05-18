@@ -130,6 +130,17 @@ h1, h2, h3, h4 {
     border: 2px solid var(--color-negro);
 }
 
+.navegacion-principal {
+    margin-left: auto;
+}
+
+.header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2.5rem;
+}
+
 .boton-menu {
     display: none;
     background: none;
